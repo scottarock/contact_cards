@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Coding Dojo Contact Page</title>
+    <meta name="description" content="A page built to practice jQuery and its use with forms. No data is stored in the back end, this simply keeps modifying the page to show new data entered.">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="contact_card.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="add_user" action="#" method="post">
+        <label for="first_name">First name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
+        <label for="last_name">Last name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br>
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description" placeholder="Enter Description"></textarea><br>
+        <input type="submit" name="submit" value="Add Contact">
+      </form>
+      <div id="contact_list">
+      </div>
+    </div>
+  </body>
+</html>
